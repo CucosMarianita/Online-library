@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "localStorage": "^1.0.4",
+    "node-localstorage": "^2.2.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "proiect-js",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

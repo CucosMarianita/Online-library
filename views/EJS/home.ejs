@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="../css/home.css" />
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Marianita"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+       
+    </head>
+
+    <body>
+        <header>
+            <%- include('nav'); %>
+        </header>
+       <br>
+        <div class="box fill" id="body">
+            <!-- <a id="buton" href="../proiect_TW.html"> &lt; Inapoi</a> -->
+            <!-- <div class="box fill" id="form" > -->
+                <h3>Introduceti datele pentru o carte noua</h3>
+                <form id="adauga" >
+                    <label for="nume_autor">Nume autor:</label><br>
+                    <input type="text" name="nume_autor" id="nume_autor" />
+                    <br>
+                    <label for="nume_carte">Nume carte:</label><br>
+                    <input type="text" name="nume_carte" id="nume_carte" />
+                    <br>
+                    <label for="nr_pagini">Nr pagini:</label><br>
+                    <input type="number" name="nr_pagini" id="nr_pagini" />
+                    <br>
+                    <label for="categorii">Categorii:</label><br>
+                    <input type="text" name="categorii" id="categorii" />
+                    <br>
+                    <label for="citita">Citita:</label><br>
+                    <input type="text" name="citita" id="citita" />
+                    <br>
+                    <button id="adauga_carte" type="submit">Adauga o carte</button>
+                </form>
+                <br>
+                <button id="pop" onclick="pop()">Elimina ultima carte adaugata</button>
+                <br>
+                <h3>Eliminarea din lista a unei carti</h3>
+                <form>
+                    <label for="delete_elem">Pozitia cartii in lista:</label>
+                    <input type="text" name="delete_elem" id="delete_elem" />
+                    <!-- <button id="eliminare_elem" type="button">Elimina carte</button> -->
+                </form>
+                <span>(press enter)</span>
+            <!-- </div> -->
+            <br>
+            <button id="delete_all">Elimina toate cartile adaugate</button>
+        </div>
+
+        <script src="/home.js"></script>
+    </body>
+</html>

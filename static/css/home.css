@@ -1,0 +1,95 @@
+#adauga_carte{
+    background-color: aquamarine;
+    height: 40px;
+    width: 170px;
+    margin-top: 5px;
+}
+
+header{
+    background-color: rgb(255, 121, 44);
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    /* margin-bottom: 20px; */
+}
+
+#navbar{
+    margin-top: 5px;
+    margin-left: 7px;
+}
+
+#navbar>a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+
+#pop{
+    width: 200px;
+    height: 40px;
+}
+
+button{
+    background-color: aquamarine;
+    height: 50px;
+    width: 300px;
+}
+
+#delete_all{
+    margin-bottom: 5px;
+}
+
+#eliminare_elem{
+    background-color: aquamarine;
+    height: 30px;
+    width: 170px;
+    margin-left: 80px;
+}
+
+.fill-layer {
+    animation:fill 1.5s ease-in-out;  
+    bottom:0;
+    left:0;
+    position:absolute;
+    right:0;
+    top:0;
+    z-index:-1;
+}
+
+body{
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form{
+    background-color:beige;
+    padding: 6px;
+    width: max-content;
+}
+
+.box{
+    background-color: lightpink;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes fill {
+    0% {
+      border-radius:50%;
+      transform:translateY(150%) translateX(150%) scale(2);
+    }
+    100% {
+      border-radius:50%;
+      transform:scale(2);
+      
+    }
+  }
